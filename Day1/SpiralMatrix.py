@@ -4,6 +4,9 @@ matrix = []
 for i in range(row):
     a = list(map(int, input().split()))
     matrix.append(a)
+    
+if not matrix or not matrix[0]:  
+    print("[]")    
 
 top = 0
 right = column - 1
